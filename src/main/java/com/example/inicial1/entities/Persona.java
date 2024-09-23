@@ -13,6 +13,8 @@ import java.io.Serializable;
 @Getter
 @ToString
 @Builder
+@Data
+
 public class Persona implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -23,4 +25,4 @@ public class Persona implements Serializable {
     @JoinColumn(name = "fk_domicilio")
     private Domicilio domicilio;
 }
-
+//persona
